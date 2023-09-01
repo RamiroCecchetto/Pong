@@ -7,7 +7,7 @@ public class Pelota {
 
     private final int RADIO = 10;
     private int x, y;
-    private double DX = 1, DY = 1;
+    private double DX = 10, DY = 10;
 
     public Pelota(int x, int y) {
         this.x  =x;
@@ -18,8 +18,8 @@ public class Pelota {
         x += DX;
         y += DY;
 
-        if (x > rectangle.getMaxX()) DX = -DX;
-        if (y > rectangle.getMaxY()) DY = -DY;
+        if (x > rectangle.getMaxX() - RADIO*2) DX = -DX;
+        if (y > rectangle.getMaxY() - RADIO*2) DY = -DY;
 
         if (x < 0) DX = -DX;
         if (y < 0) DY = -DY;
