@@ -7,7 +7,7 @@ public class Pelota {
 
     private final int RADIO = 10;
     private int x, y;
-    private int DX = 1, DY = 1;
+    private double DX = 1, DY = 1;
 
     public Pelota(int x, int y) {
         this.x  =x;

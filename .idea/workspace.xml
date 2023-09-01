@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5618cf4-670b-4529-8dfa-9d1a27e91e3d" name="Changes" comment="Se ve el tablero">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cecchetto/Hilo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cecchetto/Pelota.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e5618cf4-670b-4529-8dfa-9d1a27e91e3d" name="Changes" comment="Se agrega la pelota y esta se mueve">
+      <change beforePath="$PROJECT_DIR$/src/main/java/cecchetto/Pelota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cecchetto/Pelota.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cecchetto/Pong.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cecchetto/Pong.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cecchetto/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cecchetto/Tablero.java" afterDir="false" />
     </list>
@@ -90,12 +88,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693530521250</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Se agrega la pelota y esta se mueve">
+      <option name="closed" value="true" />
+      <created>1693533688300</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693533688300</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Primer commit" />
     <MESSAGE value="Se ve el tablero" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se ve el tablero" />
+    <MESSAGE value="Se agrega la pelota y esta se mueve" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se agrega la pelota y esta se mueve" />
   </component>
 </project>

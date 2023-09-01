@@ -29,7 +29,7 @@ public class Tablero extends JPanel{
     }
 
     public void dubijar(Graphics2D g) {
-        g.draw(pelota.getPelota());
+        g.fill(pelota.getPelota());
     }
 
     public void actualizar() {
