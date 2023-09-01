@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5618cf4-670b-4529-8dfa-9d1a27e91e3d" name="Changes" comment="Primer commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cecchetto/Pong.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cecchetto/Tablero.java" afterDir="false" />
+    <list default="true" id="e5618cf4-670b-4529-8dfa-9d1a27e91e3d" name="Changes" comment="Se ve el tablero">
+      <change afterPath="$PROJECT_DIR$/src/main/java/cecchetto/Hilo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cecchetto/Pelota.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cecchetto/Pong.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cecchetto/Pong.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cecchetto/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cecchetto/Tablero.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,11 +82,20 @@
       <option name="project" value="LOCAL" />
       <updated>1693529700864</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Se ve el tablero">
+      <option name="closed" value="true" />
+      <created>1693530521250</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693530521250</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Primer commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Primer commit" />
+    <MESSAGE value="Se ve el tablero" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se ve el tablero" />
   </component>
 </project>
