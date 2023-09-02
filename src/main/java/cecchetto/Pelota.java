@@ -15,16 +15,18 @@ public class Pelota extends ObjetoGrafico{
     }
 
     public void mover(Rectangle rectangle) {
+        if (x < 0 || x + RADIO * 2 > rectangle.getWidth() - RADIO * 2) {
+            dx = -dx;
+        }
+        if (y < 0 || y + RADIO * 2 > rectangle.getHeight() - RADIO * 2) {
+            dy = -dy;
+        }
+
         x += dx;
         y += dy;
 
-        if (x > rectangle.getMaxX() - RADIO*2) dx = -dx;
-        if (y > rectangle.getMaxY() - RADIO*2) dy = -dy;
-
-        if (x < 0) dx = -dx;
-        if (y < 0) dy = -dy;
-
     }
+
 
     public Ellipse2D getPelota() {
         return new Ellipse2D.Double(x-RADIO, y-RADIO, RADIO*2, RADIO*2);

@@ -1,6 +1,6 @@
 package cecchetto;
 
-public enum Posicion {
+public enum Lado {
 
     izquierda, derecha;
 
