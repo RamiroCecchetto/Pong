@@ -5,16 +5,15 @@ import java.awt.geom.Rectangle2D;
 
 public class Jugador extends ObjetoGrafico {
 
-    private int x, y;
     private int alto, ancho;
-    private int distanciaAlVorde = 110;
+    private final int DISTANCI_AVORDE = 110;
     Lado lado;
     public Jugador(Lado lado, Rectangle rectangle) {
         this.lado = lado;
         this.dx = 10;
         this.dy = 10;
 
-        x = (lado.equals(Lado.izquierda)? distanciaAlVorde : rectangle.getSize().width - distanciaAlVorde);
+        x = (lado.equals(Lado.izquierda)? DISTANCI_AVORDE : rectangle.getSize().width - DISTANCI_AVORDE);
         y = rectangle.getSize().height/2;
 
         alto = 35;

@@ -26,6 +26,20 @@ public class Pelota extends ObjetoGrafico{
         y += dy;
     }
 
+    public void sacarMedio(Rectangle rectangle) {
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        x = (int) (rectangle.getWidth()/2);
+        y = (int) (rectangle.getHeight()/2);
+
+        rebotar();
+    }
+
     public void rebotar() {
             dx = -dx;
     }

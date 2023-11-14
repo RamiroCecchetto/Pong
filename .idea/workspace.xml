@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5618cf4-670b-4529-8dfa-9d1a27e91e3d" name="Changes" comment="Los jugadores se mueven el el teclado, la implementación no es ma mejor...">
+      <change afterPath="$PROJECT_DIR$/src/main/java/cecchetto/Puntaje.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cecchetto/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cecchetto/Jugador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cecchetto/ObjetoGrafico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cecchetto/ObjetoGrafico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cecchetto/Pelota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cecchetto/Pelota.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cecchetto/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cecchetto/Tablero.java" afterDir="false" />
     </list>
