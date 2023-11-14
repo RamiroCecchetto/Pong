@@ -2,6 +2,7 @@ package cecchetto;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.geom.Ellipse2D;
@@ -15,9 +16,10 @@ public class Tablero extends JPanel{
 
     public  Tablero() {
         this.setBackground(Color.BLACK);
-        pelota = new Pelota(ALTO/2, ANCHO/2);
-        jugadorL = new Jugador(Lado.izquierda);
-        jugadorR = new Jugador(Lado.derecha);
+        pelota = new Pelota(ALTO / 2, ANCHO / 2);
+        jugadorL = new Jugador(Lado.izquierda, new Rectangle(ALTO, ANCHO));
+        jugadorR = new Jugador(Lado.derecha, new Rectangle(ALTO, ANCHO));
+
     }
 
     @Override
@@ -32,13 +34,13 @@ public class Tablero extends JPanel{
         g2.dispose();
     }
 
-    public void dubijar(Graphics2D g) {
+    private void dubijar(Graphics2D g) {
         g.fill(pelota.getPelota());
         g.fill(jugadorR.getJugador());
         g.fill(jugadorL.getJugador());
     }
 
-    public void actualizar() {
+    private void actualizar() {
         pelota.mover(new Rectangle(ALTO, ANCHO));
         jugadorR.mover(new Rectangle(ALTO, ANCHO));
         jugadorL.mover(new Rectangle(ALTO, ANCHO));
@@ -50,4 +52,8 @@ public class Tablero extends JPanel{
         return new Dimension(ALTO, ANCHO);
     }
 
+    public void setTeclas(boolean w, boolean s, boolean up, boolean down) {
+        jugadorR.setTeclas(w, s);
+        jugadorL.setTeclas(up, down);
+    }
 }
