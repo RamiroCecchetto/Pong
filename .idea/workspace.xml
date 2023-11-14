@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5618cf4-670b-4529-8dfa-9d1a27e91e3d" name="Changes" comment="Se agrega la clase ObjetoGrafico">
+    <list default="true" id="e5618cf4-670b-4529-8dfa-9d1a27e91e3d" name="Changes" comment="Los jugadores se mueven el el teclado, la implementación no es ma mejor...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cecchetto/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cecchetto/Jugador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cecchetto/Pong.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cecchetto/Pong.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cecchetto/ObjetoGrafico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cecchetto/ObjetoGrafico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cecchetto/Pelota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cecchetto/Pelota.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cecchetto/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cecchetto/Tablero.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693595297495</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Los jugadores se mueven el el teclado, la implementación no es ma mejor...">
+      <option name="closed" value="true" />
+      <created>1699971755678</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699971755678</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -133,6 +142,7 @@
     <MESSAGE value="No se usa la clase Hilo" />
     <MESSAGE value="La clase Pong tiene un atributo final FPS" />
     <MESSAGE value="Se agrega la clase ObjetoGrafico" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se agrega la clase ObjetoGrafico" />
+    <MESSAGE value="Los jugadores se mueven el el teclado, la implementación no es ma mejor..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Los jugadores se mueven el el teclado, la implementación no es ma mejor..." />
   </component>
 </project>

@@ -9,5 +9,7 @@ public abstract class ObjetoGrafico {
     protected double dx, dy;
 
     public abstract void mover(Rectangle rectangle);
+    public abstract void mover(Rectangle rectangle, boolean arriba, boolean abajo);
+    public abstract Shape getGrafico();
 
 }

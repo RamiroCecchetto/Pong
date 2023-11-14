@@ -24,11 +24,17 @@ public class Pelota extends ObjetoGrafico{
 
         x += dx;
         y += dy;
-
     }
 
+    public void rebotar() {
+            dx = -dx;
+    }
 
-    public Ellipse2D getPelota() {
+    @Override
+    public void mover(Rectangle rectangle, boolean arriba, boolean abajo) {}
+
+
+    public Shape getGrafico() {
         return new Ellipse2D.Double(x-RADIO, y-RADIO, RADIO*2, RADIO*2);
     }
 

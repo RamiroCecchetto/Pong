@@ -2,24 +2,27 @@ package cecchetto;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-import java.awt.geom.Ellipse2D;
-import java.awt.geom.Rectangle2D;
+import java.util.ArrayList;
 
 public class Tablero extends JPanel{
 
     private final int ALTO = 700, ANCHO = 400;
     private Pelota pelota;
     private Jugador jugadorL, jugadorR;
+    ArrayList<ObjetoGrafico> objetosGraficos;
+    private boolean w, s, up, down;
 
     public  Tablero() {
         this.setBackground(Color.BLACK);
+
         pelota = new Pelota(ALTO / 2, ANCHO / 2);
         jugadorL = new Jugador(Lado.izquierda, new Rectangle(ALTO, ANCHO));
         jugadorR = new Jugador(Lado.derecha, new Rectangle(ALTO, ANCHO));
+        objetosGraficos = new ArrayList<>();
 
+        objetosGraficos.add(pelota);
+        objetosGraficos.add(jugadorL);
+        objetosGraficos.add(jugadorR);
     }
 
     @Override
@@ -35,15 +38,20 @@ public class Tablero extends JPanel{
     }
 
     private void dubijar(Graphics2D g) {
-        g.fill(pelota.getPelota());
-        g.fill(jugadorR.getJugador());
-        g.fill(jugadorL.getJugador());
+        objetosGraficos.forEach(e -> g.fill(e.getGrafico()) );
     }
 
     private void actualizar() {
         pelota.mover(new Rectangle(ALTO, ANCHO));
-        jugadorR.mover(new Rectangle(ALTO, ANCHO));
-        jugadorL.mover(new Rectangle(ALTO, ANCHO));
+        jugadorR.mover(new Rectangle(ALTO, ANCHO), up, down);
+        jugadorL.mover(new Rectangle(ALTO, ANCHO), w, s);
+
+        for (ObjetoGrafico objetoGrafico : objetosGraficos) {
+            if (objetoGrafico instanceof Pelota)
+                if(pelota.getGrafico().intersects(jugadorL.getGrafico().getBounds2D()) || pelota.getGrafico().intersects(jugadorR.getGrafico().getBounds2D()))
+                    pelota.rebotar();
+        }
+
     }
 
 
@@ -53,7 +61,9 @@ public class Tablero extends JPanel{
     }
 
     public void setTeclas(boolean w, boolean s, boolean up, boolean down) {
-        jugadorR.setTeclas(w, s);
-        jugadorL.setTeclas(up, down);
+        this.w  =w;
+        this.s  =s;
+        this.up  =up;
+        this.down = down;
     }
 }

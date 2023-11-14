@@ -21,19 +21,18 @@ public class Jugador extends ObjetoGrafico {
         ancho = 120;
     }
 
-    public void setTeclas(boolean arriba, boolean abajo) {
-        if (arriba)
-            y += 10;
-        if (abajo)
-            y -= 10;
-    }
+    @Override
+    public void mover(Rectangle rectangle) {}
 
     @Override
-    public void mover(Rectangle rectangle) {
-
+    public void mover(Rectangle rectangle, boolean arriba, boolean abajo) {
+        if (arriba && y-alto>0)
+            y -= 10;
+        if (abajo && y+alto*2<rectangle.height)
+            y += 10;
     }
 
-    public Rectangle2D.Double getJugador() {
+    public Shape getGrafico() {
         return new Rectangle2D.Double(x - alto/2, y - ancho/2, alto, ancho);
     }
 
