@@ -6,6 +6,7 @@ import java.awt.geom.Ellipse2D;
 public class Pelota extends ObjetoGrafico{
 
     private final int RADIO = 10;
+
     public Pelota(int x, int y) {
         this.x  =x;
         this.y  =y;
@@ -34,6 +35,8 @@ public class Pelota extends ObjetoGrafico{
             throw new RuntimeException(e);
         }
 
+
+
         x = (int) (rectangle.getWidth()/2);
         y = (int) (rectangle.getHeight()/2);
 
@@ -41,7 +44,8 @@ public class Pelota extends ObjetoGrafico{
     }
 
     public void rebotar() {
-            dx = -dx;
+        dx = -dx;
+        Sonido.iniciar("pong");
     }
 
     @Override

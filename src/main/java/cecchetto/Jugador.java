@@ -32,7 +32,7 @@ public class Jugador extends ObjetoGrafico {
     }
 
     public Shape getGrafico() {
-        return new Rectangle2D.Double(x - alto/2, y - ancho/2, alto, ancho);
+        return new Rectangle.Double(x - alto/2, y - ancho/2, alto, ancho);
     }
 
 }

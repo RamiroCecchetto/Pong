@@ -46,7 +46,7 @@ public class Tablero extends JPanel{
             puntaje.aumentarPuntos(Lado.derecha);
             pelota.sacarMedio(new Rectangle(ALTO, ANCHO));
         }
-        if (pelota.x == 670) {
+        if (pelota.x >= 670) {
             puntaje.aumentarPuntos(Lado.izquierda);
             pelota.sacarMedio(new Rectangle(ALTO, ANCHO));
         }
@@ -78,9 +78,9 @@ public class Tablero extends JPanel{
     }
 
     public void setTeclas(boolean w, boolean s, boolean up, boolean down) {
-        this.w  =w;
-        this.s  =s;
-        this.up  =up;
+        this.w = w;
+        this.s = s;
+        this.up = up;
         this.down = down;
     }
 }

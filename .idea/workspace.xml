@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5618cf4-670b-4529-8dfa-9d1a27e91e3d" name="Changes" comment="Los jugadores se mueven el el teclado, la implementación no es ma mejor...">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cecchetto/Puntaje.java" afterDir="false" />
+    <list default="true" id="e5618cf4-670b-4529-8dfa-9d1a27e91e3d" name="Changes" comment="Se implementó un contador de puntos">
+      <change afterPath="$PROJECT_DIR$/src/main/java/cecchetto/Sonido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pong.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cecchetto/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cecchetto/Jugador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cecchetto/Pelota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cecchetto/Pelota.java" afterDir="false" />
@@ -47,6 +48,12 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ramic\OneDrive\Documents\Codigos\Pong\src\main\resources" />
+      <recent name="C:\Users\ramic\OneDrive\Documents\Codigos\Pong\src\main\java\cecchetto\resources" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
@@ -132,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699971755678</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Se implementó un contador de puntos">
+      <option name="closed" value="true" />
+      <created>1699995298297</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699995298297</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -143,6 +158,7 @@
     <MESSAGE value="La clase Pong tiene un atributo final FPS" />
     <MESSAGE value="Se agrega la clase ObjetoGrafico" />
     <MESSAGE value="Los jugadores se mueven el el teclado, la implementación no es ma mejor..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Los jugadores se mueven el el teclado, la implementación no es ma mejor..." />
+    <MESSAGE value="Se implementó un contador de puntos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se implementó un contador de puntos" />
   </component>
 </project>
